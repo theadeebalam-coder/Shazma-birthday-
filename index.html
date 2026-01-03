@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Shazma 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- WhatsApp Preview -->
+  <meta property="og:title" content="Happy Birthday Shazma 🎉">
+  <meta property="og:description" content="Some moments are built quietly, but remembered deeply.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lottie -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" autoplay muted loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 : COVER -->
+<section class="page hero" id="page1">
+  <h1>Happy Birthday <span>Shazma</span> 🎉</h1>
+  <p class="typing" id="typing"></p>
+
+  <div class="cute-zone">
+    <lottie-player 
+      src="https://assets10.lottiefiles.com/packages/lf20_j1adxtyb.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+    <p class="cat-name">Safa 🐱</p>
+  </div>
+
+  <button onclick="goNext(2)">Enter →</button>
+  <footer class="dev">Developed with care by Adeeb Alam</footer>
+</section>
+
+<!-- PAGE 2 : NOTE -->
+<section class="page soft" id="page2">
+  <h2>A Small Note</h2>
+  <p>
+    You have a calm way of handling things,  
+    and that reflects in everything you do.  
+    <br><br>
+    I hope this year gives you moments that feel steady,  
+    warm, and quietly meaningful.
+  </p>
+
+  <button onclick="goNext(3)">Next →</button>
+  <footer class="dev">Developed with care by Adeeb Alam</footer>
+</section>
+
+<!-- PAGE 3 : VIBE -->
+<section class="page" id="page3">
+  <h2>Things That Feel Like You</h2>
+
+  <div class="cards">
+    <div class="card">☕ Calm moments</div>
+    <div class="card">📚 Quiet focus</div>
+    <div class="card">🌿 Simple joys</div>
+  </div>
+
+  <p class="small">Not loud. Not rushed. Just balanced.</p>
+
+  <button onclick="goNext(4)">Next →</button>
+  <footer class="dev">Developed with care by Adeeb Alam</footer>
+</section>
+
+<!-- PAGE 4 : COUNTDOWN -->
+<section class="page soft" id="page4">
+  <h2>10 January</h2>
+  <p class="small">A day worth pausing for.</p>
+  <div id="timer"></div>
+
+  <button onclick="goNext(5)">Next →</button>
+  <footer class="dev">Developed with care by Adeeb Alam</footer>
+</section>
+
+<!-- PAGE 5 : MUSIC -->
+<section class="page" id="page5">
+  <h2>For This Moment 🎶</h2>
+  <p class="small">Some feelings sound better than they are said.</p>
+
+  <button onclick="enableMusic()">Unmute Music</button>
+
+  <div class="cute-zone">
+    <lottie-player 
+      src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+    <p class="cat-name">Safa 🐱</p>
+  </div>
+
+  <button onclick="goNext(6)">Next →</button>
+  <footer class="dev">Developed with care by Adeeb Alam</footer>
+</section>
+
+<!-- PAGE 6 : FINAL -->
+<section class="page final" id="page6">
+  <h2>That’s it 🙂</h2>
+  <p>
+    Hope today feels light, calm,  
+    and kind to you.
+  </p>
+
+  <button onclick="confetti()">🎉 Celebrate</button>
+
+  <canvas id="confetti"></canvas>
+  <footer class="dev">Developed with care by Adeeb Alam</footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
